@@ -1,5 +1,5 @@
 # Installing rabbitmq cluster
-This way requires many manual steps to set up systems, but can easily add new nodes while cluster is running.
+This way requires several manual steps to set up systems, but can easily add new nodes while cluster is running.
 
 ## Pre-conditions
 All node has joined into docker swarm.
