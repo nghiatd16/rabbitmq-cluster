@@ -18,7 +18,7 @@ Name and hostname of node must be same, for example with machine 1: hostname can
 docker run -dit --restart always --name rabbit-1 --hostname rabbit-1 -p 5672:5672 -p 15672:15672 --net rabbitmq-network rabbitmq-cluster:latest
 ```
 ## Join cluster
-Do repeatly each nodes. Before join to cluster, new node will be reseted and loss all data.
+Do repeatly each nodes. Before join to cluster, new node will be reset and loss all data.
 For example with node rabbit-2:
 
 ### Access to container:
