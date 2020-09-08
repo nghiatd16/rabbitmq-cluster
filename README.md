@@ -6,8 +6,9 @@ All node has joined into docker swarm.
 You can run rabbit in swarm mode or not. But we need swarm to control network
 
 ## Build image
+```
 docker build -t rabbitmq-cluster:latest -f Dockerfile .
-
+```
 ## Create overlay network
 docker network create -d overlay --attachable rabbitmq-network
 
