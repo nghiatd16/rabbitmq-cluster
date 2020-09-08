@@ -15,7 +15,7 @@ docker network create -d overlay --attachable rabbitmq-network
 Each machine create with unique name. 
 Name and hostname of node must be same, for example with machine 1: hostname can be rabbit-1 and machine 2 can be rabbit-2
 ```
-docker run -dit --name rabbit-1 --hostname rabbit-1 -p 5672:5672 -p 15672:15672 --net rabbitmq-network rabbitmq-cluster:latest
+docker run -dit --restart always --name rabbit-1 --hostname rabbit-1 -p 5672:5672 -p 15672:15672 --net rabbitmq-network rabbitmq-cluster:latest
 ```
 ## Join cluster
 Do repeatly each nodes. Before join to cluster, new node will be reseted and loss all data.
