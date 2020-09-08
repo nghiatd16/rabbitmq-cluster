@@ -1,4 +1,4 @@
-# Installing rabbitmq cluster
+# Set Up RabbitMQ Cluster
 This way requires several manual steps to set up systems, but can easily add new nodes while cluster is running.
 
 ## Pre-conditions
