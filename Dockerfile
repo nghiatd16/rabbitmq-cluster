@@ -1,4 +1,4 @@
-FROM rabbitmq:3-management
+FROM rabbitmq:3.8.8-management
 
 COPY rabbitmq-qq.conf /etc/rabbitmq/rabbitmq.conf
 COPY rabbitmq-qq-definitions.json /etc/rabbitmq/rabbitmq-definitions.json
