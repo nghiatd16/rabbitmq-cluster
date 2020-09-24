@@ -10,8 +10,9 @@ You can run rabbit in swarm mode or not. But we need swarm to control network
 docker build -t rabbitmq-cluster:latest -f Dockerfile .
 ```
 ## Create overlay network
+```
 docker network create -d overlay --attachable rabbitmq-network
-
+```
 ## Create node
 Each machine create with unique name. 
 Name and hostname of node must be same, for example with machine 1: hostname can be rabbit-1 and machine 2 can be rabbit-2
